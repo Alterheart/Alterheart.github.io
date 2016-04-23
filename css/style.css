@@ -1,0 +1,123 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("../img/background.png");
+  padding-bottom: 30px;
+  font-family: 'Gentium Basic';
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 102%;
+  margin: -10px;
+  background-color: #7a481b;
+  opacity: 1;
+  z-index: 1;
+  padding-top: 50px;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
+}
+
+.logo-container {
+  padding-left: 30%;
+  z-index: 1;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-left: -205px;
+  margin-top: -190px;
+  opacity: 0;
+  transition: visibility 0s 1.5s, opacity 1.5s linear;
+}
+
+.header-image {
+  width: 102%;
+  margin: -10px;
+}
+
+.box-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  padding-top: 50px;
+  background: url('../img/paper.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: -20px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.box-background {
+  position: fixed;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.pitch {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+  width: 75%;
+  color: #463829;
+  margin-top: 20px;
+}
+
+.socmed-items {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.socmed-icon {
+  height: 35px;
+  margin: 5px;
+}
+
+.video-container {
+  width: 800px;
+  height: 400px;
+}
+
+.content-title {
+  height: 60px;
+  width: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 500px) {
+  .video-container {
+    width: 550px;
+    height: 400px;
+  }
+}
+
+.footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
